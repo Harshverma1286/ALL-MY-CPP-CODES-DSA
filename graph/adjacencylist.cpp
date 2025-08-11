@@ -51,7 +51,7 @@ int main(){
         int src;
         int destination;
         bool isbidirectional;
-        cout<<"enter the source , direction, biderctional :";
+        cout<<"enter the source , destination, biderctional :";
         cin>>src>>destination>>isbidirectional;
         addedge(src,destination,isbidirectional,graph);
     }
