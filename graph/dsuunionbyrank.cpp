@@ -4,7 +4,7 @@ using namespace std;
 
 int get(int x,vector<int>& parent){
     if(parent[x]==x) return parent[x];
-    return get(parent[x],parent);
+    return parent[x] = get(parent[x],parent);
 }
 
 void unionofelements(int a,int b,vector<int>& parents,vector<int>& rank){
@@ -24,8 +24,8 @@ void unionofelements(int a,int b,vector<int>& parents,vector<int>& rank){
 int main(){
     int n = 5;
 
-    vector<int> parent(n);
-    vector<int> rank(n);
+    vector<int> parent(n+1);
+    vector<int> rank(n+1,0);
 
     for(int i=0;i<parent.size();i++){
         parent[i] = i;
