@@ -12,7 +12,8 @@
         "functional": "cpp",
         "random": "cpp",
         "regex": "cpp",
-        "new": "cpp"
+        "new": "cpp",
+        "list": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
