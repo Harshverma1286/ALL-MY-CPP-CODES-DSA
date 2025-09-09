@@ -15,11 +15,10 @@ void addedge(int src,int dest,int wt,bool bidir,vector<list<pp>>& graph){
     }
 }
 
-int prims(int start,vector<list<pp>>& graph,int vertices){
+int prims(int start,vector<list<pp>>& graph,int vertices,vector<int>& parents){
     priority_queue<pp,vector<pp>,greater<pp>> pq;
     unordered_map<int,int> mp;
     unordered_set<int> visited;
-    vector<int> parents(vertices+1);
 
     int weights = 0;
 
@@ -69,6 +68,12 @@ int main(){
 
     int start;
     cin>>start;
+    vector<int> parents(vertices+1);
 
-    cout<<prims(start,graph,vertices);
+    cout<<prims(start,graph,vertices,parents);
+
+    for(int i=0;i<parents.size();i++){
+        cout<<i<<"->"<<parents[i];
+        cout<<endl;
+    }
 }
