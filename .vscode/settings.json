@@ -13,7 +13,8 @@
         "random": "cpp",
         "regex": "cpp",
         "new": "cpp",
-        "list": "cpp"
+        "list": "cpp",
+        "tuple": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
