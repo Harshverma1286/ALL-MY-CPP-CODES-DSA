@@ -1,0 +1,24 @@
+*   [33mf6cbf98[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Merge branch 'main' of https://github.com/Harshverma1286/ALL-MY-CPP-CODES-DSA
+[31m|[m[32m\[m  
+[31m|[m * [33m6ce34ba[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m feat: add program to set the ith bit of a number using bit manipulation
+[31m|[m * [33m34f468a[m feat: add program to swap two numbers using bit manipulation
+[31m|[m * [33mbffcb64[m feat: add binary to decimal and decimal to binary conversion functions
+[31m|[m * [33ma0c5517[m feat: implement flight discount calculation with coupon in a graph
+[31m|[m * [33md44e8f6[m feat: implement Dijkstra's algorithm for shortest path in a graph
+[31m|[m * [33m696730b[m feat: update Prim's algorithm to track parent nodes and print the resulting tree
+[31m|[m * [33m00842e9[m feat: implement Prim's algorithm for minimum spanning tree
+[31m|[m * [33ma8a54b0[m feat: implement Kruskal's algorithm for minimum spanning tree
+[31m|[m * [33m449d502[m feat: add cycle detection algorithms for undirected graphs using BFS and union-find
+[31m|[m * [33mcb019f1[m feat: add implementation to determine if destination can be reached in a grid
+[31m|[m * [33m294f3ac[m feat: implement Kahn's algorithm for topological sorting in a directed graph
+[31m|[m * [33m88cd11c[m feat: implement union-find data structure with union by size and path compression
+[31m|[m * [33m54bebe2[m fix: update binary for union-find implementation with rank optimization
+[31m|[m * [33m5f3dff7[m fix: correct parent array initialization and improve path compression in union-find implementation
+[31m|[m * [33m59eb7f2[m implement union-find data structure with path compression and union by size
+[31m|[m * [33m7b31007[m implement breadth-first search and connected components in graph
+[31m|[m * [33mc46e42d[m lerant about bfs
+[31m|[m * [33mf32e422[m learnt about dfs
+[31m|[m * [33m10d6b02[m minimal fix
+[31m|[m * [33md6d41a3[m learining graph algorithms
+[31m|[m * [33m5bb3af3[m adding all my cpp practice
+* [33mcf8dbad[m Initial commit
