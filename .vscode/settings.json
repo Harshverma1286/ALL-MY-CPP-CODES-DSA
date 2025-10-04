@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "bitset": "cpp",
+        "ostream": "cpp",
+        "iosfwd": "cpp",
+        "istream": "cpp",
+        "streambuf": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "functional": "cpp",
+        "random": "cpp",
+        "regex": "cpp",
+        "new": "cpp",
+        "list": "cpp",
+        "tuple": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "enabled"
+}
