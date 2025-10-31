@@ -11,10 +11,8 @@ using namespace std;
 int main(){
     int n;
     cin>>n;
-
     vector<vector<int>> vaishnavi;
     vector<vector<int>> suraj;
-
     for (int i = 0; i < n; i++) {
         string ch, val, anotherch, anotherval;
         cin >> ch >> val >> anotherch >> anotherval;
@@ -26,7 +24,6 @@ int main(){
             if (s == "K") return 13;
             return stoi(s);
         };
-
         int rank1 = getRank(ch);
         int suit1 = stoi(val);
         int rank2 = getRank(anotherch);
@@ -75,8 +72,7 @@ int main(){
     const int MAX_TURNS = 10000;
 
     while(turnCount < MAX_TURNS){
-        turnCount++;
-        
+        turnCount++;       
         if(vaishnaviturn){
             if(vaishnavideck.empty()){
                 break;
@@ -109,7 +105,6 @@ int main(){
                 }
                 
                 rearrangeCards(tempHand);
-                
                 if(vaishnaviturn){
                     for(auto &card : tempHand){
                         vaishnavideck.push({card[0], card[1]});
@@ -126,7 +121,6 @@ int main(){
 
         vaishnaviturn = !vaishnaviturn;
     }
-
     if(vaishnavideck.empty() && surajdeck.empty()){
         cout << "TIE";
     } else if(vaishnavideck.empty()){
@@ -134,6 +128,4 @@ int main(){
     } else {
         cout << "WINNER";
     }
-    
-    return 0;
 }
