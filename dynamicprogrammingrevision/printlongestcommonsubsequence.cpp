@@ -29,7 +29,7 @@ int main(){
 
     while(i>0 && j>0){
         if(a[i-1]==b[j-1]){
-            ans+=a[i-1];
+            ans+=b[j-1];
             i=i-1;
             j=j-1;
         }
