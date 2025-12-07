@@ -3,7 +3,7 @@
 #include<vector>
 using namespace std;
 
-int evaluateexpressiontotrue(string& s,int i,int j,bool istrue){
+int evaluateexpressiontotrue(string& s,int i,int j,bool istrue,vector<vector<vector<int>>>& dp){
     if(i>j) return 0;
 
     if(i==j){
@@ -17,14 +17,16 @@ int evaluateexpressiontotrue(string& s,int i,int j,bool istrue){
         }
     }
 
+    if(dp[i][j][istrue]!=-1) return dp[i][j][istrue];
+
     int ans = 0;
 
     for(int k=i+1;k<=j-1;k+=2){
         int lf,rf,lt,rt;
-        lf = evaluateexpressiontotrue(s,i,k-1,false);
-        lt = evaluateexpressiontotrue(s,i,k-1,true);
-        rt = evaluateexpressiontotrue(s,k+1,j,true);
-        rf = evaluateexpressiontotrue(s,k+1,j,false);
+        lf = evaluateexpressiontotrue(s,i,k-1,false,dp);
+        lt = evaluateexpressiontotrue(s,i,k-1,true,dp);
+        rt = evaluateexpressiontotrue(s,k+1,j,true,dp);
+        rf = evaluateexpressiontotrue(s,k+1,j,false,dp);
 
         if(s[k]=='&'){
             if(istrue==true){
@@ -51,7 +53,7 @@ int evaluateexpressiontotrue(string& s,int i,int j,bool istrue){
             }
         }
     }
-    return ans;
+    return dp[i][j][istrue]=ans;
 }
 
 int main(){
@@ -60,9 +62,11 @@ int main(){
     int i=0;
     int j=s.length()-1;
 
+    vector<vector<vector<int>>> dp(s.length()+1,vector<vector<int>>(s.length()+1,vector<int>(2,-1)));
+
     bool istrue = true;
 
-    int finalans = evaluateexpressiontotrue(s,i,j,istrue);
+    int finalans = evaluateexpressiontotrue(s,i,j,istrue,dp);
 
     cout<<finalans;
 }
