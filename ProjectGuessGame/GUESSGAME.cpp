@@ -82,5 +82,8 @@ class umpire{
 };
 
 int main(){
-
+    umpire u1;
+    u1.getthenumberoftheguesser();
+    u1.gettheplayersguess();
+    u1.evaluate();
 }
